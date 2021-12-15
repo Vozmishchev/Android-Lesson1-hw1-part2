@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <EditText
+            android:id="@+id/user_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:hint="Enter your name"
+            android:inputType="textCapWords|textPersonName"
+            android:textColor="#800080"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/user_phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+            android:hint="Enter your numberPhone"
+            android:inputType="phone"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/user_birthday_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your birthday dd/mm/yyyy"
+            android:inputType="date"
+            android:textColor="#AD00CC"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#3B73FF"
+            android:padding="5dp"
+            android:text="Rent a car"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton_sedan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="Sedan"
+                android:textOn="Rent" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton_minivan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="Minivan"
+                android:textOn="Rent" />
+
+
+            <ToggleButton
+                android:id="@+id/toggleButton_pickup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="Pickup"
+                android:textOn="Rent" />
+
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switch_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:showText="true"
+            android:switchPadding="10dp"
+            android:text="Automatic transmission"
+            android:textOff="Off"
+            android:textOn="On"
+            android:textSize="15sp" />
+
+
+        <CheckBox
+            android:id="@+id/key_checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User agreement" />
+
+        <Button
+            android:id="@+id/rent_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RENT"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your data for rent"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#9900cc"/>
+
+        <CalendarView
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbVertical="@style/TextAppearance.AppCompat.Body1"/>
+
+
+    </LinearLayout>
+</ScrollView>
